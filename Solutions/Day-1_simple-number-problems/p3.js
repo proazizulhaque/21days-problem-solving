@@ -11,5 +11,7 @@ function sumOfNaturalNum(range) {
     sum += i;
   }
   console.log(sum);
+
+  console.log((range * (range + 1)) / 2);
 }
-sumOfNaturalNum(5)
+sumOfNaturalNum(20);
