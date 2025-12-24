@@ -1,10 +1,12 @@
 function incomeTax(income) {
   if (income <= 250000) return 0;
-  else if (income <= 500000) {
+  if (income <= 500000) {
     return (500000 - 250000) * 0.05;
-  } else if (income <= 1000000) {
+  }
+  if (income <= 1000000) {
     return (500000 - 250000) * 0.05 + (income - 500000) * 0.2;
-  } else {
+  }
+  else {
     return (
       (500000 - 250000) * 0.05 +
       (1000000 - 500000) * 0.2 +
